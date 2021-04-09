@@ -41,6 +41,20 @@ header .carousel-inner .item{
     padding-bottom: 250px;
 }
 
+.carousel-caption a{
+    background: red;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.carousel-caption a:hover{
+    background: rgb(255, 102, 102);
+    text-decoration: none;
+}
+
 
 .dropbtn {
     background-color: transparent;
@@ -98,7 +112,7 @@ header .carousel-inner .item{
     width: 100%;
     height: 100vh;
     z-index: 99999999;
-    background-image: url('assets/img/ladlilogohr.png'); /* your icon gif file path */
+    background-image: url('assets/img/ladlilogohr.png');
     background-repeat: no-repeat;
     background-color: #FFF;
     background-position: center;
@@ -107,4 +121,10 @@ header .carousel-inner .item{
 #stop-scrolling {
     height: 100% !important;
     overflow: hidden !important;
+}
+
+@media screen and (max-width: 768px){
+    .carousel-caption{
+        padding-bottom: 150px;
+    }
 }
